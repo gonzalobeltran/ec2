@@ -1,0 +1,12 @@
+#!/bin/bash
+
+ssh simuc '
+mongodump
+'
+scp -r simuc:/home/ubuntu/dump/simuc .
+
+ssh simuc '
+rm -r dump
+'
+
+mv simuc ../db/"$(date +%Y%m%d)"
