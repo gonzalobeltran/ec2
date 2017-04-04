@@ -33,6 +33,6 @@ cat <<EOT | tee -a app.json
 }
 EOT
 
-pm2 start app.json
+pm2 start app.json --node-args="--max-old-space-size=256 --gc_interval=100"
 pm2 save
 '
