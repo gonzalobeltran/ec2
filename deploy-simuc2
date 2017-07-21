@@ -26,7 +26,7 @@ cat <<EOT | tee -a app.json
     "script"      : "~/bundle/main.js",
     "env": {
       "MONGO_URL": "mongodb://localhost:27017/simuc2",
-      "ROOT_URL": "http://18.231.13.217",
+      "ROOT_URL": "http://salasimuc.cl",
       "PORT": "80"
     }
   }]
